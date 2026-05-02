@@ -1,0 +1,66 @@
+\documentclass[11pt, a4paper]{article}
+
+% ===== 宏包 =====
+\usepackage{ctex}
+\usepackage{geometry}
+\usepackage{ulem}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{amssymb}
+
+% ===== 页面设置 =====
+\geometry{left=2cm, right=2cm, top=2.5cm, bottom=2.5cm}
+
+% ===== 文档标题 =====
+\title{\Large 北京大学线性代数 A 期中试题\\[0.5em]{\normalsize 2025-2026 学年第二学期}}
+\author{}
+\date{}
+
+% ===== 试题正文 =====
+\setCJKmainfont{SimHei}
+\begin{document}
+
+\maketitle
+
+ % ===== 试题内容 =====
+ \begin{enumerate}
+    \item (10分) 设 $q$, $m$ 和 $n$ 都是正整数，求多项式 $f(x)=x^{q^m}-x$ 与 $g(x)=x^{q^n}-x$ 的最大公因式.
+    \item (8分) 设 $n$ 阶矩阵 
+        \[
+            A=\begin{pmatrix}
+                0 & I_{n-1} \\[0.6em]
+                1 & 0
+            \end{pmatrix},
+        \]
+        判断 $A$ 能否对角化，若能给出与 $A$ 相似的对角矩阵.
+    \item (12分) 设矩阵
+        \[
+            A=\begin{pmatrix}
+                1 & \,0 & 0 & \,0 \\[0.6em]
+                1 & \,1 & 0 & \,1 \\[0.6em]
+                0 & \,2 & 2 & -2  \\[0.6em]
+                2 & -1  & 0 & \,3
+            \end{pmatrix},
+        \]
+        \begin{enumerate}[label=(\arabic*)]
+            \item 求 $A$ 的特征多项式和最小多项式;
+            \item 求可逆矩阵 $U$ 和 Jordan 形矩阵 $J$ 使得 $A=UJU^{-1}$.
+        \end{enumerate}
+    \item (20分) 设复数域 $\mathbb{C}$ 上的4阶方阵 $A$ 满足 $A^2-3A+2I=0$.
+        \begin{enumerate}[label=(\arabic*)]
+            \item 求 $A$ 所有可能的最小多项式，并对每种情形所确定 $A$ 的 Jordan 标准形;
+            \item \label{q:4-2} 设进一步有 $\mathrm{rank}\,(A-I)=2$，给出 $A$ 的特征多项式、最小多项式和 Jordan 标准形;
+            \item 在 \ref{q:4-2} 的条件下，求与 $A^{10}$ 相似的矩阵.
+        \end{enumerate}
+    \item (20分) 设 $\mathcal{A}$ 是复线性空间 $V$ 上的线性变换. 已知 $\mathcal{A}$ 的特征多项式为 $f(x)=x^4-6x^2+8x-3$，且 $\mathcal{A}$ 的各个特征子空间的维数之和等于 $3$.
+        \begin{enumerate}[label=(\arabic*)]
+            \item 将 $V$ 分解为 $\mathcal{A}$ 的特征子空间 $V_1$, $V_2$ 的直和，求出 $V_1$, $V_2$ 的维数;
+            \item 求 $\mathcal{A}$ 的最小多项式;
+            \item 求一个 $2$ 次多项式 $h(x)$，使得线性变换 $\mathcal{B}=h(\mathcal{A})$ 可以对角化且 $\mathcal{A}-\mathcal{B}$ 是 $V$ 上的幂零变换.
+        \end{enumerate}
+    \item (10分) 设复数域上 $n$ 阶矩阵 $A$ 满足 $\mathrm{rank}\,A+\mathrm{rank}\,(A-I)=n$，证明 $A^2=A$ 且 $\mathrm{tr}\,A=\mathrm{rank}\,A$.
+    \item (10分) 设矩阵 $A$, $B$ 均可对角化，且 $AB=BA$，证明存在可逆矩阵 $U$ 使得 $U^{-1}AU$ 和 $U^{-1}BU$ 均为对角矩阵.
+    \item (10分) 设 $\mathcal{A}$, $\mathcal{B}$ 是 $n$ 维线性空间 $V$ 上的线性变换，满足条件 $\mathcal{A}^n=0$, $\mathrm{dim}\,\mathrm{Ker}\mathcal{A}=1$ 且 $\mathcal{B}\mathcal{A}-\mathcal{A}\mathcal{B}=\mathcal{A}$，证明 $\mathcal{B}$ 可对角化.
+ \end{enumerate}
+
+\end{document}
